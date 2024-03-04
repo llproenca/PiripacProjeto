@@ -1,0 +1,210 @@
+/* seletor geral (remover todos os espeçamentos que é padrao do html*/
+* {
+    margin:0%;
+    border: 0%;
+    padding: 0%;
+}
+
+:root {
+    --rosa-cor-de-fundo: #FC0051;   
+    --branco-cor-do-texto:#FFFFFF;
+}
+
+body {
+    background-color: var(--rosa-cor-de-fundo);
+   
+}
+
+
+p {
+    font-family: 'Inter', sans-serif;
+}
+
+/* ":hover" é o estado de passar o mouse em cima */
+a:hover {
+    text-decoration:underline; 
+    
+}
+
+
+.alinha {
+    float:left;
+    position:relative;
+    width:100%;
+}
+
+.alinha-centro {
+    position: relative;
+    width: 90%; 
+    margin:0 auto;
+}
+.img-logo svg {
+    float:left;
+    position:relative;
+    width:100%;
+    height: auto;
+}
+.img-logo {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+/* aqui é p/ add margem inferior*/
+.img-principal {
+    position: relative;
+    margin-bottom:78px; 
+    
+}
+
+/*aqui é p/ realizar alterações diretamente na imagem*/
+.img-principal img { 
+    position:relative;
+    /* max-width: 549px; */
+    width: 45%;
+    height: auto;
+    margin-top:-100px;
+    z-index: 5;
+    
+}
+
+.img-principal .alinha-centro {
+    display: flex;  
+    justify-content: center;
+
+}
+
+
+.img-principal .links {
+    color: var(--branco-cor-do-texto);
+    font-size: 3vw; /*tamanho da fonte p/ acompanhar o tamanho da tela*/
+    line-height: normal; /*altura da linha*/
+    position:absolute;
+    z-index: 10;  /*Z-index especifica a ordem da pilha de um elemento da imagem*/
+    top: 78px;
+    left: 0;
+    text-align: left;
+}
+
+
+.texto-principal p {
+    text-align: left;
+    color:var(--branco-cor-do-texto);
+    font-size: 2vw;
+    line-height:normal;
+}
+
+.texto-principal {
+    margin-bottom: 60px;
+}
+
+
+
+
+/* AQUI E TAL PARTE----------------------------------------------------------------------- */
+
+
+.texto-secundario {
+    position: absolute;
+    bottom:20px;
+    left:0;
+    color: var(--branco-cor-do-texto);
+    font-size: 1.30vw;
+    z-index: 10;
+    text-align: left;
+}
+
+.cor-do-link {
+    color: var(--branco-cor-do-texto)
+    font-family:'Inter',  sans-serif;
+    text-decoration:none;/* Remove a sublinhado */  
+}
+
+@media (max-width: 1000px) {
+    .alinha-centro {
+        width: 95%; /* Ajuste a largura para ocupar toda a tela */
+    }
+
+    .img-principal img {
+        max-width: 100%; /* Ajuste a largura máxima para a imagem ocupar a largura disponível */
+        height: auto;
+        margin-top: 0;
+    }
+
+    .texto-principal p {
+      font-size: 15px; /* Tamanho de fonte menor */
+    }
+
+    .texto-secundario {
+        text-align: left;
+        font-size: 15px; /* Tamanho de fonte menor */
+
+    }
+}
+
+
+/* idenfica o tamanho da tela, menor que 650 geralmente são celulares*/
+
+
+@media (max-width:650px) {
+    
+
+    .img-principal .links {
+        position:relative;
+        top:0;
+        float:left;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: left;
+        font-size: 6vw;
+    }
+    .texto-secundario {
+        position:relative;
+        top:0;
+        float:left;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .img-principal .alinha-centro {
+        display:block;
+
+    }
+
+    .img-logo {
+        
+        margin-bottom:20px;
+        margin-top: 20px;
+    }
+
+    .img-principal {
+        text-align: center;
+        margin-bottom:20px;
+    }
+    
+    .img-principal img {
+        width: 70%;
+    }
+
+    .texto-principal {
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+
+
+
